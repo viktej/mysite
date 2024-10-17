@@ -1,1 +1,17 @@
+language: python
+# python:
+#   - "3.11-dev"
 
+
+install:
+  - pip install -r requirements.txt
+
+script:
+- black --check .
+- flake8 --max-line-length=150 .
+- coverage run manage.py test
+- env
+
+
+after_scripts:
+- coveralls
