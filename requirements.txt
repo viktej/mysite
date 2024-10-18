@@ -1,4 +1,4 @@
-black==24.10.0
+black
 coverage==7.6.3
 Django==2.2
 flake8==7.1.1
