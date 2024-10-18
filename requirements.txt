@@ -1,6 +1,6 @@
 black
-coverage==7.6.3
-Django==2.2
-flake8==7.1.1
-pytz==2024.2
+coverage
+Django
+flake8
+pytz
 sqlparse
