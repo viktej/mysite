@@ -3,3 +3,5 @@
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+.ebextensions/env/lib/python3.11/site-packages/pip/__init__.py
+env/
