@@ -18,5 +18,5 @@ after_scripts:
 - coveralls
 
 - name: Coveralls GitHub Action
-uses: coverallsapp/github-action@v2.3.3
+- uses: coverallsapp/github-action@v2.3.3
             
