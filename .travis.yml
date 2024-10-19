@@ -11,10 +11,26 @@ script:
 - black --check .
 - flake8 --max-line-length=400 .
 - coverage run manage.py test
+- coveralls
 - env
 
 
-after_scripts:
-- coveralls
+# after_scripts:
+
+
+
+# deploy:
+#   provider: elasticbeanstalk
+#   access_key_id: ########
+#   secret_access_key: ######
+#     # secure: 
+#   region: us-west-2
+#   app: django-app
+#   env: Django-app-env
+#   bucket_name: elasticbeanstalk-us-west-2-992382724291
+#   on:
+#     repo: ######
+#     branch: main
+#   skip_cleanup: 'true'
 
             
