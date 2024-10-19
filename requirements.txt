@@ -4,3 +4,4 @@ Django
 flake8
 pytz
 sqlparse
+coveralls

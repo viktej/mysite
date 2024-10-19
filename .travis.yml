@@ -19,18 +19,18 @@ script:
 
 
 
-# deploy:
-#   provider: elasticbeanstalk
-#   access_key_id: ########
-#   secret_access_key: ######
-#     # secure: 
-#   region: us-west-2
-#   app: django-app
-#   env: Django-app-env
-#   bucket_name: elasticbeanstalk-us-west-2-992382724291
-#   on:
-#     repo: ######
-#     branch: main
-#   skip_cleanup: 'true'
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ID
+  secret_access_key: $AWS_KEY
+    # secure: 
+  region: us-west-2
+  app: Django2
+  env: Django2
+  bucket_name: elasticbeanstalk-us-west-2-084375578870
+  on:
+    repo: ######
+    branch: project
+  skip_cleanup: 'true'
 
             
